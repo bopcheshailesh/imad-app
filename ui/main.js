@@ -1,5 +1,5 @@
 console.log('Loaded!');
-
+counter = 0;
 /*var element = document.getElementById('main-text');
 element.innerHTML = 'New text';
 
