@@ -1,5 +1,5 @@
 console.log('Loaded!');
-counter = 0;
+
 /*var element = document.getElementById('main-text');
 element.innerHTML = 'New text';
 
@@ -17,7 +17,7 @@ img.onclick = function(){
 };
 */
 var button = document.getElementById('counter');
-
+counter = 0;
 button.onclick = function(){
    //Make a request to the counter end-point
    
