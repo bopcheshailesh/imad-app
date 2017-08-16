@@ -21,7 +21,7 @@ var articles = {
                     <p>
                         Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.
                     </p>`
-    };
+    },
     articletwo : {
         title : 'Article Two | Shailesh Bopche',
         head: 'Article Two',
@@ -30,15 +30,16 @@ var articles = {
                         Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.
                     </p>
                     `
-    };
-    articlethree = {
+    },
+    
+    articlethree : {
         title : 'Article Three | Shailesh Bopche',
         head: 'Article Three',
         date: 'August 18, 2017',
         content: `<p>
                         This is article three . Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.
                     </p>`
-    };
+    }
 };
 
 function callme (data){
