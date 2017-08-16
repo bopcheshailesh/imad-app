@@ -1,6 +1,6 @@
 console.log('Loaded!');
 
-var element = document.getElementById('main-text');
+/*var element = document.getElementById('main-text');
 element.innerHTML = 'New text';
 
 var img = document.getElementById('madi');
@@ -15,9 +15,10 @@ function moveright(){
 img.onclick = function(){
     var interval = setInterval(moveright, 50);
 };
+*/
+var button = document.getElementById('counter');
 
-var changeCount = document.getElementById('counter');
-
-changeCount.onClick = function(){
-    console.log('Button has been clicked');
+button.onclick = function(){
+    var numberoftimesbuttonclicked = document.getelementById('count');
+    numberoftimesbuttonclicked.innerHTML = numberoftimesbuttonclicked.innerHTML + 1;
 }
