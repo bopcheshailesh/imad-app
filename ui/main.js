@@ -19,5 +19,5 @@ img.onclick = function(){
 var changeCount = document.getElementById('counter');
 
 changeCount.onClick = function(){
-    console('Button has been clicked');
+    console.log('Button has been clicked');
 }
