@@ -16,7 +16,7 @@ img.onclick = function(){
     var interval = setInterval(moveright, 50);
 };
 
-var changeCount = document.getElementById('count');
+var changeCount = document.getElementById('counter');
 
 changeCount.onClick = function(){
     console('Button has been clicked');
