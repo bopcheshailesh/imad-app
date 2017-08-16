@@ -4,42 +4,40 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
-var articleone = {
-    title : 'Article One | Shailesh Bopche',
-    head: 'Article One',
-    date: 'August 16, 2017',
-    content: `<p>
-                    Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.
-                </p>
-                
-                <p>
-                    Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.
-                </p>
-                
-                <p>
-                    Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.
-                </p>`
-};
-
-var articletwo = {
-    title : 'Article Two | Shailesh Bopche',
-    head: 'Article Two',
-    date: 'August 17, 2017',
-    content: `<p>
-                    Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.
-                </p>
-                `
-};
-
-var articlethree ={
-    title : 'Article Three | Shailesh Bopche',
-    head: 'Article Three',
-    date: 'August 18, 2017',
-    content: `<p>
-                    This is article three . Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.
-                </p>
-                `
+var articles = {
+    articleone : {
+        title : 'Article One | Shailesh Bopche',
+        head: 'Article One',
+        date: 'August 16, 2017',
+        content: `<p>
+                        Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.
+                    </p>
+                    
+                    <p>
+                        Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.
+                    </p>
+                    
+                    <p>
+                        Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.
+                    </p>`
+    };
+    articletwo : {
+        title : 'Article Two | Shailesh Bopche',
+        head: 'Article Two',
+        date: 'August 17, 2017',
+        content: `<p>
+                        Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.
+                    </p>
+                    `
+    };
+    articlethree = {
+        title : 'Article Three | Shailesh Bopche',
+        head: 'Article Three',
+        date: 'August 18, 2017',
+        content: `<p>
+                        This is article three . Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.
+                    </p>`
+    };
 };
 
 function callme (data){
