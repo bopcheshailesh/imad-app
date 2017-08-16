@@ -19,6 +19,6 @@ img.onclick = function(){
 var button = document.getElementById('counter');
 
 button.onclick = function(){
-    var numberoftimesbuttonclicked = document.getelementById('count');
+    var numberoftimesbuttonclicked = document.getElementById('count');
     numberoftimesbuttonclicked.innerHTML = numberoftimesbuttonclicked.innerHTML + 1;
 }
