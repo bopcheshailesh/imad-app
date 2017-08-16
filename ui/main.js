@@ -25,6 +25,6 @@ button.onclick = function(){
         x++;
     }
     else{
-        numberoftimesbuttonclicked.innerHTML = x;
+        numberoftimesbuttonclicked.innerHTML = x+1;
     }
 }
