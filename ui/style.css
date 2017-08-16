@@ -1,31 +1,23 @@
-body {
-    font-family: sans-serif;
-    background-color: lightgrey;
-    margin-top: 75px;
-}
-
-.center {
-    text-align: center;
-}
-
-.text-big {
-    font-size: 300%;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.img-medium {
-    height: 200px;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    font-family: sans-serif;
-    padding-top: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
+<!doctype html>
+<html>
+    <head>
+        <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="">
+            <button class="navigationbutton" href="/ui/article-one" >Article One</button>
+            <button class="navigationbutton" href="/ui/article-two" >Article Two</button>
+            <button class="navigationbutton" href="/ui/article-three" >Article Three</button>
+        </div>
+        <div class="center">
+            <img src="/ui/madi.png" class="img-medium"/>
+        </div>
+        <br>
+        <div class="center text-big bold">
+            Hi! I am Shailesh, and this my first webapp.
+            <p>I have made some new local changes.</p>
+        </div>
+        <script type="text/javascript" src="/ui/main.js">
+        </script>
+    </body>
+</html>
