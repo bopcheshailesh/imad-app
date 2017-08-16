@@ -17,14 +17,14 @@ img.onclick = function(){
 };
 */
 var button = document.getElementById('counter');
-var x = 0;
+
 button.onclick = function(){
-    var numberoftimesbuttonclicked = document.getElementById('count');
-    if(x === 0){
-        numberoftimesbuttonclicked.innerHTML = x;
-        x++;
-    }
-    else{
-        numberoftimesbuttonclicked.innerHTML = x+1;
-    }
+   //Make a request to the counter end-point
+   
+   //Capture the response and store it in a variable
+   
+   //Render the variable in correct span
+   counter = counter + 1 ;
+   var span = document.getElementById('count');
+   span.innerHTML = counter.toString();
 }
