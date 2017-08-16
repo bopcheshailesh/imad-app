@@ -5,6 +5,23 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var articleone= {
+    title : 'Article One | Shailesh Bopche',
+    head: 'Article One',
+    date: 'August 16, 2017',
+    content: `<p>
+                    Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.
+                </p>
+                
+                <p>
+                    Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.
+                </p>
+                
+                <p>
+                    Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.
+                </p>`
+};
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
