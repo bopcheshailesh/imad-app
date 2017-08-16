@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
-    articleone : {
+    'article-one' : {
         title : 'Article One | Shailesh Bopche',
         head: 'Article One',
         date: 'August 16, 2017',
@@ -22,7 +22,7 @@ var articles = {
                         Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.
                     </p>`
     },
-    articletwo : {
+    'article-two' : {
         title : 'Article Two | Shailesh Bopche',
         head: 'Article Two',
         date: 'August 17, 2017',
@@ -31,7 +31,7 @@ var articles = {
                     </p>
                     `
     },
-    articlethree : {
+    'article-three' : {
         title : 'Article Three | Shailesh Bopche',
         head: 'Article Three',
         date: 'August 18, 2017',
@@ -79,8 +79,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one',function(req,res){
-    res.send(createtemplate(articleone));
+app.get('/:articleName',function(req,res){
+    //articleName == article-one
+    articleName = req.param.articleName;
+    res.send(createtemplate(articles[articleName]));
 });
 
 app.get('/article-two',function(req,res){
