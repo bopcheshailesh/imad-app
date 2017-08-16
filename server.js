@@ -31,7 +31,6 @@ var articles = {
                     </p>
                     `
     },
-    
     articlethree : {
         title : 'Article Three | Shailesh Bopche',
         head: 'Article Three',
