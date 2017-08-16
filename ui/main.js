@@ -20,5 +20,11 @@ var button = document.getElementById('counter');
 var x = 0;
 button.onclick = function(){
     var numberoftimesbuttonclicked = document.getElementById('count');
-    numberoftimesbuttonclicked.innerHTML = x + 1;
+    if(x === 0){
+        numberoftimesbuttonclicked.innerHTML = x;
+        x++;
+    }
+    else{
+        numberoftimesbuttonclicked.innerHTML = x;
+    }
 }
