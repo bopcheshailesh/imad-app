@@ -21,13 +21,46 @@ var articleone= {
                     Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.Content will be added here.
                 </p>`
 };
+function callme (data){
+var title = data.title;
+var head = data.head;
+var date = data.date;
+var content = data.content;
+var htmltemplate = `
+<html>
+    <head>
+        <title>${title}</title>
+        <meta name="viewport" content="width=device-width, initial-scale= 1" />
+        <link href="/ui/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <a href="/">Home</a>
+            </div>
+            <hr/>
+            <h3>
+                ${head}
+            </h3>
+            <div>
+                ${date} 
+            </div>
+            <div>
+                ${content}
+            </div>
+        </div>
+    </body>
+</html>
+`;
+return htmltemplate;
+}
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/article-one',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+    res.send(callme(articleone));
 });
 
 app.get('/article-two',function(req,res){
