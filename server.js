@@ -41,7 +41,7 @@ var articles = {
     }
 };
 
-function callme (data){
+function createtemplate (data){
 var title = data.title;
 var head = data.head;
 var date = data.date;
@@ -80,15 +80,15 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one',function(req,res){
-    res.send(callme(articleone));
+    res.send(createtemplate(articleone));
 });
 
 app.get('/article-two',function(req,res){
-    res.send(callme(articletwo));
+    res.send(createtemplate(articletwo));
 });
 
 app.get('/article-three',function(req,res){
-    res.send(callme(articlethree));
+    res.send(createtemplate(articlethree));
 });
 
 app.get('/ui/style.css', function (req, res) {
